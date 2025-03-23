@@ -1,0 +1,9 @@
+# Virtual Enviroment
+venv/
+
+# Private configuration
+.env
+app/firebase_key.json
+
+# IDE
+.idea/
