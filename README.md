@@ -31,7 +31,16 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**Step 4** - Start developtment server
+**Step 4** - Setup the backend locally
+
+To run the backend locally, you need to provide Firebase service account credentials. 
+These credentials are required for authentication and Firebase Admin SDK integration.
+
+1. Place your Firebase service account JSON file inside the `app/` directory and name
+it `firebase_key.json` (or ask the backend developer for that file).
+2. Create a `.env` file (use the `.env.example` provided).
+
+**Step 5** - Start development server
 ```bash
 uvicorn app.main:app --reload
 ```
